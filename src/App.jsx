@@ -45,7 +45,7 @@ export const App = () => {
             <tr
               data-cy="Good"
               className={
-                good === selectedGood && 'has-background-success-light'
+                good === selectedGood ? 'has-background-success-light' : ''
               }
             >
               <td>
@@ -59,7 +59,7 @@ export const App = () => {
                   }}
                   data-cy={good === selectedGood ? 'RemoveButton' : 'AddButton'}
                   type="button"
-                  className={`button ${good === selectedGood && 'is-info'}`}
+                  className={`button ${good === selectedGood ? 'is-info' : ''}`}
                 >
                   {good === selectedGood ? '-' : '+'}
                 </button>
